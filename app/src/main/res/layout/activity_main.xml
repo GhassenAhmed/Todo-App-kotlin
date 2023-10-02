@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:text="Todo App"
+        android:textSize="90px"
+        android:paddingLeft="140dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTodoItems"
+        android:layout_width="match_parent"
+        android:layout_height="486dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddTodos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/teal_700"
+            android:text="Add"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDeleteTodos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/purple_200"
+            android:text="Delete"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etTodoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:hint="Enter Todo Title"
+            android:textColorHint="@color/teal_200"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
